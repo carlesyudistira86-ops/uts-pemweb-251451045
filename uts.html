@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTS Pemrograman Web - Carles Yudistira - 251451045</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#daftar" class="skip-link">Lewati ke formulir pendaftaran</a>
+
+  <header>
+    <h1>Festival Budaya Kampus 2026</h1>
+    <p>Oleh: Carles Yudistira | NIM: 251451045</p>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#rundown">Rundown</a></li>
+        <li><a href="#daftar">Daftar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tentang">
+      <h2>Tentang Acara</h2>
+      <p>Festival Budaya Kampus adalah acara tahunan untuk merayakan keberagaman budaya Indonesia melalui seni, musik, dan kuliner.</p>
+      <img src="images/kegiatan.jpg" alt="Kegiatan Festival Budaya Kampus" width="600">
+      <p><strong>Tanggal:</strong> Sabtu, 29 November 2026 | <strong>Lokasi:</strong> Lapangan Utama Kampus</p>
+    </section>
+
+    <section id="rundown">
+      <h2>Rundown Acara</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Jam</th>
+            <th scope="col">Kegiatan</th>
+            <th scope="col">Tempat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>08.00 - 09.00</td>
+            <td>Pembukaan & Tari Tradisional</td>
+            <td>Panggung Utama</td>
+          </tr>
+          <tr>
+            <td>09.00 - 11.00</td>
+            <td>Pameran Budaya & Bazar Kuliner</td>
+            <td>Lapangan Utama</td>
+          </tr>
+          <tr>
+            <td>11.00 - 12.30</td>
+            <td>Lomba Musik & Penutup</td>
+            <td>Panggung Utama</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="daftar">
+      <h2>Formulir Pendaftaran</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" required placeholder="Isi nama lengkap kamu">
+        </div>
+        <div>
+          <label for="nim">NIM:</label>
+          <input type="text" id="nim" name="nim" required placeholder="Contoh: 251451045">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="nama@email.com">
+        </div>
+        <div>
+          <label for="prodi">Program Studi:</label>
+          <select id="prodi" name="prodi" required>
+            <option value="">-- Pilih Prodi --</option>
+            <option value="informatika">Informatika</option>
+            <option value="sistem-informasi">Sistem Informasi</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Pilih Kegiatan:</legend>
+            <label><input type="checkbox" name="kegiatan" value="tari"> Tari Tradisional</label>
+            <label><input type="checkbox" name="kegiatan" value="musik"> Musik</label>
+            <label><input type="checkbox" name="kegiatan" value="kuliner"> Bazar Kuliner</label>
+          </fieldset>
+        </div>
+        <div>
+          <label for="pesan">Pesan / Harapan:</label>
+          <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan kamu di sini..."></textarea>
+        </div>
+        <button type="submit">Daftar Sekarang</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Carles Yudistira - 251451045 | UTS Pemrograman Web</p>
+  </footer>
+</body>
+</html>
